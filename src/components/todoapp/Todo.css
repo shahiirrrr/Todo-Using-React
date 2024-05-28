@@ -1,0 +1,179 @@
+.todo-container {
+    width: 90vw;
+    max-width: 600px;
+    padding: 2em;
+    margin: 5em auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.todo-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+input {
+    flex: 1;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #2980b9;
+}
+
+.add-btn {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db; /* changed to a softer blue */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #5dade2; /* changed to a lighter blue */
+}
+
+.tasks {
+    margin-top: 1em;
+}
+
+.list-tasks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.list-tasks:hover {
+    background-color: #f1f1f1;
+    border-color: #bbb;
+}
+
+.list-tasks input {
+    flex: 1;
+    font-size: 1.2em;
+    padding: 0.3em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 0.5em;
+    transition: border-color 0.3s;
+}
+
+.list-tasks input:focus {
+    border-color: #2980b9;
+}
+
+.delete-btn, .save-btn, .cancel-btn, .edit-btn {
+    font-size: 0.9em;
+    padding: 0.3em 0.6em;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.3em;
+    background-color: #e74c3c;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.edit-btn {
+    background-color: #3498db;
+}
+
+.edit-btn:hover {
+    background-color: #5dade2;
+}
+
+.save-btn {
+    background-color: #27ae60;
+}
+
+.save-btn:hover {
+    background-color: #2ecc71;
+}
+
+.cancel-btn {
+    background-color: #f39c12;
+}
+
+.cancel-btn:hover {
+    background-color: #f1c40f;
+}
+
+@media (max-width: 600px) {
+    .todo-container {
+        width: 95vw;
+        padding: 1.5em;
+        margin: 2em auto;
+    }
+
+    .header {
+        font-size: 2em;
+    }
+
+    input {
+        font-size: 1em;
+        padding: 0.4em;
+    }
+
+    .add-btn {
+        font-size: 0.9em;
+        padding: 0.4em 0.8em;
+    }
+
+    .list-tasks {
+        font-size: 1em;
+        padding: 0.4em 0.8em;
+    }
+
+    .list-tasks input {
+        font-size: 1em;
+        padding: 0.2em;
+    }
+
+    .delete-btn, .save-btn, .cancel-btn, .edit-btn {
+        font-size: 0.8em;
+        padding: 0.2em 0.5em;
+    }
+}
+
+.add-btn, .delete-btn, .save-btn, .cancel-btn, .edit-btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
